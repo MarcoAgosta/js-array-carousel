@@ -1,5 +1,39 @@
-const images = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp"]
+const images = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp"];
 
-const sliderImgEl = document.getElementById("foto")
+const sliderImgEl = document.getElementById("foto");
+const btnUp = document.getElementById("button-up");
+const btnDown = document.getElementById("button-down");
 
-sliderImgEl.src = images [0]
+const ultimoIndiceDisponibile = images.length-1;
+
+let currentImgIndex = 0;
+
+sliderImgEl.src = images [ currentImgIndex ];
+
+btnUp.addEventListener("click", function() {
+
+    currentImgIndex++;
+
+    if (currentImgIndex > ultimoIndiceDisponibile){
+
+        currentImgIndex = ultimoIndiceDisponibile
+
+    }
+
+    sliderImgEl.src = images [ currentImgIndex ]
+
+} )
+
+btnDown.addEventListener("click", function() {
+
+    currentImgIndex--;
+
+    if (currentImgIndex < 0){
+
+        currentImgIndex = 0
+
+    }
+
+    sliderImgEl.src = images [ currentImgIndex ]
+
+} )
