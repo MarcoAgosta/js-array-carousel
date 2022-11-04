@@ -1,12 +1,21 @@
-.cornice{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 700px;
-    width: 200px;
+#foto{
+    height: 500px;
+    object-fit: cover;
 }
 
+.laterale {
+    height: 500px;
+    position: relative;
+}
+
+.laterale img{
+    height: 20%;
+    object-fit: cover;
+}
+
+.row > button{
+    width: 1.5rem;
+}
 
 button{
     background-color: lightgray;
@@ -14,24 +23,17 @@ button{
     border-radius: 50%;
     color: gray;
     position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
+    left: 83%;
     z-index: 10;
+    transform: translate(-50%, 0);
 }
 
 #button-up{
-    top: 0;
+    top: 0%;
 }
 
 #button-down{
-    bottom: 0;
+    bottom: 0%;
 }
 
-img{
-    width: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
 
