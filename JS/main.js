@@ -14,9 +14,9 @@ btnUp.addEventListener("click", function() {
 
     currentImgIndex++;
 
-    if (currentImgIndex > ultimoIndiceDisponibile){
+    if (currentImgIndex === ultimoIndiceDisponibile+1){
 
-        currentImgIndex = ultimoIndiceDisponibile
+        currentImgIndex = 0
 
     }
 
@@ -28,9 +28,9 @@ btnDown.addEventListener("click", function() {
 
     currentImgIndex--;
 
-    if (currentImgIndex < 0){
+    if (currentImgIndex === -1){
 
-        currentImgIndex = 0
+        currentImgIndex = ultimoIndiceDisponibile
 
     }
 
