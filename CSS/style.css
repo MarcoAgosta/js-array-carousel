@@ -1,0 +1,36 @@
+.cornice{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 200px;
+}
+
+
+button{
+    background-color: lightgray;
+    border: none;
+    border-radius: 50%;
+    color: gray;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+#button-up{
+    top: 0;
+}
+
+#button-down{
+    bottom: 0;
+}
+
+img{
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
