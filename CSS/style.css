@@ -36,4 +36,6 @@ button{
     bottom: 0%;
 }
 
-
+.dark{
+    filter: grayscale(100%);
+}
